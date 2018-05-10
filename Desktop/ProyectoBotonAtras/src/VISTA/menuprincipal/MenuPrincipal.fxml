@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VISTA.menuprincipal.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="629.0" fitWidth="1011.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../IMAGENES/fondo2.jpg" />
+         </image>
+      </ImageView>
+      <Pane opacity="0.5" prefHeight="629.0" prefWidth="200.0" style="-fx-background-color: B8F3FF; -fx-opacity: 0.5;" />
+      <Separator layoutX="199.0" layoutY="121.0" prefHeight="5.0" prefWidth="767.0" />
+      <Label layoutX="200.0" layoutY="29.0" prefHeight="70.0" prefWidth="503.0" text="Menú Principal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="629.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btPerfil" layoutX="34.0" layoutY="516.0" mnemonicParsing="false" onAction="#mostrarPerfil" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" text="Perfil">
+               <effect>
+                  <DropShadow color="#26e6ff" />
+               </effect>
+            </Button>
+            <Button fx:id="btCalendario" layoutX="34.0" layoutY="336.0" mnemonicParsing="false" onAction="#mostrarCalendario" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" text="Calendario">
+               <effect>
+                  <DropShadow color="#1ad1ff" />
+               </effect>
+            </Button>
+            <Button fx:id="btPaquetes" layoutX="34.0" layoutY="282.0" mnemonicParsing="false" onAction="#mostrarPaquetes" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" text="Paquetes">
+               <effect>
+                  <DropShadow color="#1ebfeb" />
+               </effect>
+            </Button>
+            <Button fx:id="btPaquetesContratado" layoutX="36.0" layoutY="394.0" mnemonicParsing="false" onAction="#paquetesContratados" style="-fx-background-color: white;" text="Paquetes Contratatos">
+               <effect>
+                  <DropShadow color="#3abfe4" />
+               </effect>
+            </Button>
+            <Label layoutX="4.0" layoutY="201.0" prefHeight="39.0" prefWidth="193.0" text="Planifica tus paquetes">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="449.0" text="Accede a tu Perfil">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../IMAGENES/43e1cd9f-4ff1-4bb3-9aea-3e2cd7adccc6.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="192.0" prefHeight="52.0" prefWidth="246.0" text="Crea las" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="271.0" text="experiencias a " textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="352.0" text="tu medida" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
